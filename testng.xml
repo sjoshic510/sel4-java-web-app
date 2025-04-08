@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="bc_demo.Test_MySQL_Database_Testing"/>
+      <class name="selenium_webdriver.Test_002_SendKeys_Click"/>
+      <class name="bc_demo.Test_001_LunchBrowers"/>
+      <class name="bc_demo.Test_003_Subi"/>
+      <class name="selenium_webdriver.Test_003_DropDown"/>
+      <class name="bc_demo.Test_002_Maximize"/>
+      <class name="selenium_webdriver.Test_001_Lunch_Diffrent_Browser"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

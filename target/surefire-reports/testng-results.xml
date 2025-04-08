@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="11" passed="9" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-03-11T19:39:16 EDT" name="Surefire suite" finished-at="2025-03-11T19:40:43 EDT" duration-ms="87572">
+    <groups>
+    </groups>
+    <test started-at="2025-03-11T19:39:16 EDT" name="Surefire test" finished-at="2025-03-11T19:40:43 EDT" duration-ms="87572">
+      <class name="selenium_webdriver.Test_002_SendKeys_Click">
+        <test-method signature="test_enter_click()[pri:0, instance:selenium_webdriver.Test_002_SendKeys_Click@f0da945]" started-at="2025-03-11T19:40:18 EDT" name="test_enter_click" finished-at="2025-03-11T19:40:33 EDT" duration-ms="15005" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_enter_click -->
+      </class> <!-- selenium_webdriver.Test_002_SendKeys_Click -->
+      <class name="selenium_webdriver.Test_003_DropDown">
+        <test-method signature="test_enter_select_dropdown()[pri:0, instance:selenium_webdriver.Test_003_DropDown@4803b726]" started-at="2025-03-11T19:40:33 EDT" name="test_enter_select_dropdown" finished-at="2025-03-11T19:40:43 EDT" duration-ms="10696" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_enter_select_dropdown -->
+      </class> <!-- selenium_webdriver.Test_003_DropDown -->
+      <class name="bc_demo.Test_003_Subi">
+        <test-method signature="test_lunch_amazon()[pri:0, instance:bc_demo.Test_003_Subi@3c7f66c4]" started-at="2025-03-11T19:39:34 EDT" name="test_lunch_amazon" finished-at="2025-03-11T19:39:38 EDT" duration-ms="3805" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_lunch_amazon -->
+      </class> <!-- bc_demo.Test_003_Subi -->
+      <class name="bc_demo.Test_MySQL_Database_Testing">
+        <test-method signature="test_retrive_data()[pri:0, instance:bc_demo.Test_MySQL_Database_Testing@194bcebf]" started-at="2025-03-11T19:39:38 EDT" name="test_retrive_data" finished-at="2025-03-11T19:39:38 EDT" duration-ms="702" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Cavin] but found [Subi C]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Cavin] but found [Subi C]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at bc_demo.Test_MySQL_Database_Testing.test_retrive_data(Test_MySQL_Database_Testing.java:38)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_retrive_data -->
+        <test-method signature="test_updateSql()[pri:0, instance:bc_demo.Test_MySQL_Database_Testing@194bcebf]" started-at="2025-03-11T19:39:38 EDT" name="test_updateSql" finished-at="2025-03-11T19:39:38 EDT" duration-ms="88" status="FAIL">
+          <exception class="java.sql.SQLIntegrityConstraintViolationException">
+            <message>
+              <![CDATA[Duplicate entry '100' for key 'adventemp.PRIMARY']]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '100' for key 'adventemp.PRIMARY'
+at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117)
+at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1092)
+at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1040)
+at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1347)
+at bc_demo.Test_MySQL_Database_Testing.test_updateSql(Test_MySQL_Database_Testing.java:63)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.sql.SQLIntegrityConstraintViolationException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_updateSql -->
+      </class> <!-- bc_demo.Test_MySQL_Database_Testing -->
+      <class name="selenium_webdriver.Test_001_Lunch_Diffrent_Browser">
+        <test-method signature="test_lunch_chrome()[pri:0, instance:selenium_webdriver.Test_001_Lunch_Diffrent_Browser@17497425]" started-at="2025-03-11T19:39:38 EDT" name="test_lunch_chrome" finished-at="2025-03-11T19:39:49 EDT" duration-ms="10443" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_lunch_chrome -->
+        <test-method signature="test_lunch_firefox()[pri:0, instance:selenium_webdriver.Test_001_Lunch_Diffrent_Browser@17497425]" started-at="2025-03-11T19:39:49 EDT" name="test_lunch_firefox" finished-at="2025-03-11T19:40:05 EDT" duration-ms="16082" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_lunch_firefox -->
+        <test-method signature="test_lunch_msedge()[pri:0, instance:selenium_webdriver.Test_001_Lunch_Diffrent_Browser@17497425]" started-at="2025-03-11T19:40:05 EDT" name="test_lunch_msedge" finished-at="2025-03-11T19:40:18 EDT" duration-ms="12678" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_lunch_msedge -->
+      </class> <!-- selenium_webdriver.Test_001_Lunch_Diffrent_Browser -->
+      <class name="bc_demo.Test_001_LunchBrowers">
+        <test-method signature="test_lunch_facebook()[pri:0, instance:bc_demo.Test_001_LunchBrowers@57cf54e1]" started-at="2025-03-11T19:39:16 EDT" name="test_lunch_facebook" finished-at="2025-03-11T19:39:23 EDT" duration-ms="6832" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_lunch_facebook -->
+      </class> <!-- bc_demo.Test_001_LunchBrowers -->
+      <class name="bc_demo.Test_002_Maximize">
+        <test-method signature="test_lunch_amazon()[pri:0, instance:bc_demo.Test_002_Maximize@3a44431a]" started-at="2025-03-11T19:39:23 EDT" name="test_lunch_amazon" finished-at="2025-03-11T19:39:27 EDT" duration-ms="4006" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_lunch_amazon -->
+        <test-method signature="test_lunch_walmart()[pri:0, instance:bc_demo.Test_002_Maximize@3a44431a]" started-at="2025-03-11T19:39:27 EDT" name="test_lunch_walmart" finished-at="2025-03-11T19:39:34 EDT" duration-ms="7108" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_lunch_walmart -->
+      </class> <!-- bc_demo.Test_002_Maximize -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
