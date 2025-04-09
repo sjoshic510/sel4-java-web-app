@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.selenium.webdriver.Test_005_GetAttribute">
+      <class name="com.sel.framework.Test01_Verify_Homepage">
         <methods>
-          <include name="GetAttribute"/>
-          <include name="setUp"/>
           <include name="tearDown"/>
+          <include name="verify_Homepage"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- com.selenium.webdriver.Test_005_GetAttribute -->
+      </class> <!-- com.sel.framework.Test01_Verify_Homepage -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
