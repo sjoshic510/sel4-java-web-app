@@ -22,7 +22,7 @@ public class Test_12_ChromeOptions {
 	}
 
 	@Test
-	public void test_allArguments() {
+	public void test_allArguments() throws InterruptedException {
 		ChromeOptions options = new ChromeOptions();
 
 		// Set various options
@@ -41,6 +41,8 @@ public class Test_12_ChromeOptions {
 		WebDriver driver = new ChromeDriver(options);
 		driver.get("https://demo.automationtesting.in/Alerts.html");
 		driver.findElement(By.xpath("//button[@class='btn btn-danger']")).click();
+		Thread.sleep(3000);
+		driver.quit();
 
 	}
 
