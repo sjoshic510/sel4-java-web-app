@@ -1,25 +1,98 @@
-To Run all Will run all the class with "Test" infront
-	mvn test
+# Maven Test Execution & Allure Report Guide
 
-To Run specefic class
-	mvn test -Dtest=Test_002_Maximize
+## 🧪 Running Tests with Maven
 
-To Run specefic class
-	mvn test -Dtest=Test_001_LunchBrowers
+### Run All Tests  
+This command will run all test classes with names starting with `Test`:
+```bash
+mvn test
+```
 
-To Run specefic method inside specefic class
-	mvn test -Dtest=Test_002_Maximize#test_lunch_walmart test
-	
-Other related use-cases
-mvn test -Dtest=Test1 // Run a single test class
+### Run a Specific Test Class  
+To run a specific test class:
+```bash
+mvn test -Dtest=Test_002_Maximize
+```
 
-mvn test -Dtest=Test1,Test2 // Run multiple test classes
+```bash
+mvn test -Dtest=Test_001_LunchBrowers
+```
 
-mvn test -Dtest=Test1#testFoo* // Run all test methods that match pattern 'testFoo*' from a test class.
+### Run a Specific Test Method from a Class  
+To run a specific method inside a test class:
+```bash
+mvn test -Dtest=Test_002_Maximize#test_lunch_walmart
+```
 
-mvn test -Dtest=Test1#testFoo*+testBar* // Run all test methods match pattern 'testFoo*' and 'testBar*' from a test class.
+## 🔁 Other Maven Use Cases
 
-# How to open the Allure Report
-	Allure report automatically generate after mvn run
-	----------to view----------- 
-	C:\Users\Bijaya Chhetri\eclipse-workspace-new\testmvn_project>allure serve allure-results
+### Run a Single Test Class
+```bash
+mvn test -Dtest=Test1
+```
+
+### Run Multiple Test Classes
+```bash
+mvn test -Dtest=Test1,Test2
+```
+
+### Run All Methods Matching a Pattern
+```bash
+mvn test -Dtest=Test1#testFoo*
+```
+
+### Run Multiple Methods Matching Patterns
+```bash
+mvn test -Dtest=Test1#testFoo*+testBar*
+```
+
+## 📊 Allure Report Setup & Usage
+
+### 🛠️ Installation on Windows
+
+1. **Open PowerShell as Administrator**
+
+2. **Install Scoop**
+```powershell
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+irm get.scoop.sh | iex
+```
+
+3. **Install Allure via Scoop**
+```powershell
+scoop install allure
+```
+
+4. **Verify Allure Installation**
+```bash
+allure --version
+```
+
+### 📈 Generating and Viewing Reports
+
+- **Generate the Allure Report**
+```bash
+allure generate allure-results -o allure-report --clean
+```
+
+- **View the Allure Report in Browser**
+```bash
+allure open allure-report
+```
+
+- **Serve the Report (auto-refresh on changes)**
+```bash
+allure serve allure-results
+```
+
+### ⚡ Automatic Allure Report Generation After Maven Test Run
+
+After running your Maven tests, use this to serve the report:
+```bash
+allure serve allure-results
+```
+
+> Example:
+```bash
+C:\Users\Bijaya Chhetri\eclipse-workspace-new\testmvn_project>allure serve allure-results
+```
