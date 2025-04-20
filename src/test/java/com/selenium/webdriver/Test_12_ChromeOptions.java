@@ -5,19 +5,24 @@ import org.openqa.selenium.PageLoadStrategy;
 import org.openqa.selenium.WebDriver.Options;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import org.openqa.selenium.WebDriver;
 
 public class Test_12_ChromeOptions {
-
+	
+	
+	WebDriver driver;
+	
 	@Test
 	public void test_browserSpeed() {
 		ChromeOptions options = new ChromeOptions();
 		options.setPageLoadStrategy(PageLoadStrategy.EAGER);
 		// options.setPageLoadStrategy(PageLoadStrategy.NORMAL);
+		options.addArguments("--start-maximized");
 
-		WebDriver driver = new ChromeDriver(options);
-		driver.get("");
+		driver = new ChromeDriver(options);
+		driver.get("https://demo.automationtesting.in/Alerts.html");
 
 	}
 
@@ -38,7 +43,7 @@ public class Test_12_ChromeOptions {
 //		options.addArguments("--disable-infobars");  // Disable "Chrome is being controlled" info bar
 //		options.addArguments("--remote-debugging-port=9222");  // Enable remote debugging
 
-		WebDriver driver = new ChromeDriver(options);
+	     driver = new ChromeDriver(options);
 		driver.get("https://demo.automationtesting.in/Alerts.html");
 		driver.findElement(By.xpath("//button[@class='btn btn-danger']")).click();
 		Thread.sleep(3000);
